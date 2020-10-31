@@ -49,6 +49,5 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@types/express": "^4.17.8",
     "express": "^4.17.1"
-  },
-  "proxy": "http://localhost:4200/"
+  }
 }
