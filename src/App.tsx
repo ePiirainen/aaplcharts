@@ -45,16 +45,16 @@ class App extends Component<{}, { chartOptions: {} }> {
 
         for (i; i < dataLength; i += 1) {
           ohlc.push([
-            data[i].date, // the date
-            data[i].open, // open
-            data[i].high, // high
-            data[i].low, // low
-            data[i].close // close
+            data[i].date,
+            data[i].open,
+            data[i].high,
+            data[i].low,
+            data[i].close
           ]);
 
           volume.push([
-            data[i].date, // the date
-            data[i].volume // the volume
+            data[i].date,
+            data[i].volume
           ]);
         }
         // Set options. Navigator is disabled since I could not for the life of me figure out why the volume chart was overlapping with it, and google didnt help :(
