@@ -69,8 +69,10 @@ class App extends Component<{}, { chartOptions: {} }> {
           rangeSelector: {
             enabled: false
           },
-        
-
+          scrollbar: {
+            enabled: false
+          },
+          
           yAxis: [{
             labels: {
               align: 'right',
