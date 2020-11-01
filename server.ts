@@ -5,6 +5,7 @@ const path = require('path')
 const app: express.Application = express()
 
 const PORT = process.env.PORT || 4200;
+app.use(routes);
 
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
@@ -16,8 +17,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-
-app.use(routes);
 app.listen(PORT, () => {
   console.log("Node backend listening on port " + PORT)
 });
