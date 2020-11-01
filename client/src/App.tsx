@@ -66,6 +66,9 @@ class App extends Component<{}, { chartOptions: {} }> {
           navigator: {
             enabled: false
           },
+          rangeSelector: {
+            enabled: false
+          },
         
 
           yAxis: [{
