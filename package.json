@@ -23,7 +23,7 @@
   },
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "node server.js",
+    "start": "tsc server.ts --esModuleInterop && node server.js",
     "server": "tsc server.ts --esModuleInterop && node server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
