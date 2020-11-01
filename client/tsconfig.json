@@ -21,6 +21,6 @@
     "jsx": "react"
   },
   "include": [
-    "src", "client/routes", "client/client"
+    "src"
   ]
 }
